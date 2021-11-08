@@ -1,0 +1,10 @@
+com\callor\student\models\ScoreVO$ScoreVOBuilder.class
+com\callor\student\models\StudentVO.class
+com\callor\student\service\StudentService.class
+com\callor\student\controller\HomeController.class
+com\callor\student\models\ScoreVO.class
+com\callor\student\service\GenericService.class
+com\callor\student\models\StudentVO$StudentVOBuilder.class
+com\callor\student\service\impl\StudentServiceImplV1.class
+com\callor\student\controller\StudentController.class
+com\callor\student\service\ScoreService.class
