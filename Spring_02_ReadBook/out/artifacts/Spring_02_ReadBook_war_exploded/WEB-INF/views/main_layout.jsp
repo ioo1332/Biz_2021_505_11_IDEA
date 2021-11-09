@@ -5,18 +5,20 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <link href="${rootPath}/static/css/main.css?ver=2021-11-08-002" rel="stylesheet" />
-    <title>학사관리</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="${rootPath}/static/main.css?ver=2021-11-09-001" rel="stylesheet">
+    <title>Title</title>
 </head>
 <body>
-<tiles:insertAttribute name="header"/>
-<tiles:insertAttribute name="nav" />
+<header>
+    <h1>READ BOOK</h1>
+    <h3>똑 소리 나는 독서록</h3>
+</header>
 <section class="content">
     <tiles:insertAttribute name="content" />
 </section>
-<tiles:insertAttribute name="footer"/>
+<footer>
+    <address>CopyRight &copy; ioo168400</address>
+</footer>
 </body>
 </html>

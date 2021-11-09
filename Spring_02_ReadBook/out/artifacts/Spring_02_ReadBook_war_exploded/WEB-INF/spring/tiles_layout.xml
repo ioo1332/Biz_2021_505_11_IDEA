@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<!-- tiles layout 을 설정하기 위한 영역 -->
+<tiles-definitions>
+    <!-- fragment 를 설정하는 부분 -->
+    <definition name="*/*" template="/WEB-INF/views/main_layout.jsp">
+        <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+    </definition>
+</tiles-definitions>

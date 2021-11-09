@@ -5,7 +5,7 @@
 
 <!-- tiles layout 을 설정하기 위한 영역 -->
 <tiles-definitions>
-    <!-- 각각의 fragment 를 설정하는 부분 -->
+    <!-- fragment 를 설정하는 부분 -->
     <definition name="default" template="/WEB-INF/views/main_layout.jsp">
         <put-attribute name="header" value="/WEB-INF/views/fragment/header.jsp"/>
         <put-attribute name="nav" value="/WEB-INF/views/fragment/nav.jsp"/>
@@ -13,17 +13,16 @@
         <put-attribute name="footer" value="/WEB-INF/views/fragment/footer.jsp" />
     </definition>
 
-    <!-- default 로 설정된 부분을 상속받고, content 부분만 별도로 재 설정 -->
+    <!-- default 로 설정된 부분을 상속, content 부분만 별도로 재정의 -->
     <definition name="HOME" extends="default">
         <put-attribute name="content" value="/WEB-INF/views/home.jsp"/>
     </definition>
 
-    <definition name="ST/*" extends="default">
+    <definition name="ST/*" extends="default" >
         <put-attribute name="content" value="/WEB-INF/views/student/{1}.jsp"/>
     </definition>
-
     <definition name="*/*" extends="default">
-        <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"/>
+        <put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp" />
     </definition>
 
 </tiles-definitions>

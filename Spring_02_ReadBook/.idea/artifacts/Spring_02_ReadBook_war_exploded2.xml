@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Spring_02_ReadBook:war exploded2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Spring_02_ReadBook_war_exploded2</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Spring_02_ReadBook/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Spring_02_ReadBook" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
