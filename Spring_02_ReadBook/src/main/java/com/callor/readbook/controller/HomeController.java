@@ -14,38 +14,36 @@ public class HomeController {
 
     Logger logger = LoggerFactory.getLogger(HomeController.class);
 
-    @Value("${username}")
+    //@Value("${props.username}")
     private String userName;
 
-    @Value("${password}")
+    //@Value("${props.password}")
     private String password;
 
-    @Value("${driverClassName}")
+    //@Value("${props.driver}")
     private String className;
 
-    @Value("${url}")
+    //@Value("${props.url}")
     private String url;
 
 
     @ResponseBody
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home() {
-        logger.debug("여기는 홈");
+        logger.debug("여기는 홈 입니다");
         // return "home/home";
         // return "대한민국만세";
 
         return String.format("username %s <br> " +
                 "password %s <br>" +
                 "url %s <br>" +
-                "driver %s <br>", userName, password, url, className);
+                "driver %s <br>",userName, password, url, className);
     }
-
-    @RequestMapping(value = "/book", method = RequestMethod.GET)
+    @RequestMapping(value="/book",method=RequestMethod.GET)
     public String book() {
         return "book/list";
     }
-
-    @RequestMapping(value = "/write", method = RequestMethod.GET)
+    @RequestMapping(value="/write",method=RequestMethod.GET)
     public String write() {
         return "read/write";
     }
